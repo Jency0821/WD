@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        Section .imgbox{
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+        section .imgbox::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(225deg,#e91e63,#03a9f4);
+            z-index: 1;
+            mix-blend-mode: screen;
+        }
+        section .imgbox img{
+            position: absolute;
+            top: 0;
+            left: 0Px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section .contentbx{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        section .contentbx .formbx{
+            width: 50%;
+        }
+        section .contentbx .formbx h2{
+            color:#607d8b;
+            font-weight: 600;
+            font-size: 1.5cm;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom:4Px solid #ff4584;
+            display: inline-block;
+            letter-spacing: 1Px;
+        }
+        section .contentbx .formbx .inputbx{
+            margin-bottom: 20Px;
+        }
+        section .contentbx .formbx .inputbx span{
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: inline-block;
+            color:#607db8;
+            font-weight: 300;
+            font-size: 16Px;
+            letter-spacing: 1px;
+        }
+        section .contentbx .formbx .inputbx input{
+            width: 100%;
+            padding: 10Px 20Px;
+            outline: none;
+            font-weight: 400;
+            border: 1px solid #607d8b;
+            font-size: 16Px;
+            letter-spacing: 1px;
+            background: transparent;
+            border-radius: 30Px;
+        }
+        section .contentbx .formbx .inputbx input[type="submit"]
+        {
+            background: #ff4584;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            cursor: pointer ;
+        }
+        section .contentbx .formbx .inputbx input[type="submit"]:hover
+        {
+            background: #f53677;
+        }
+        section .contentbx .formbx .remember{
+            margin-bottom: 10px;
+            color: #607d8b;
+            font-size: 14Px;
+            font-weight: 400;
+        }
+        section .contentbx .formbx .inputbx p{
+            color: #607d8b;
+        }
+        section .contentbx .formbx .inputbx p a{
+            color: #ff4584;
+        }
+        section .contentbx .formbx h3{
+            color: #607d8b;
+            text-align: center;
+            margin: 80Px 0 10Px;
+            font-weight: 500;
+        }
+        section .contentbx .formbx .sci{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section .contentbx .formbx .sci li{
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #607d8b;
+            border-radius: 50%;
+            margin: 0 7Px;
+            cursor: pointer;
+        }
+        section .contentbx .formbx .sci li:hover{
+            background: #ff4584;
+        }
+</style>
+</head>
+<body>
+    <section>
+    <div class="imgbox">
+        <img src="https://i.ytimg.com/vi/oxATyiFBVaI/maxresdefault.jpg" alt="">
+    </div>
+    <div class="contentbx">
+        <div class="formbx">
+            <h2>Login</h2>
+            <form>
+                <div class="inputbx">
+                    <span>USERNAME</span>
+                    <input type="text">
+                </div>
+                <div class="inputbx">
+                    <span>PASSWORD</span>
+                    <input type="password">
+                </div>
+                <div class="remember">
+                    <lable><input type="Checkbox">Remember Me</lable>
+                    <div class="inputbx">
+                        <input type="Submit" value="Sign in">
+                    </div>
+                    <div class="inputbx">
+                        <p>Don't have an account? <a href="#">Sign up</a></p>
+                    </div>
+                </div>
+            </form>
+            <h3>Login with social media</h3>
+            <ul class="sci">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

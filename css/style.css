@@ -1,0 +1,15 @@
+*{margin: 0%;
+padding: 0;
+box-sizing: border-box;
+}
+header{background-color: rgb(29,29,31);
+color: white;
+padding: 20Px 0;}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    list-style: none;
+}
+.container{}

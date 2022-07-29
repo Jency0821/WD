@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    background: url(https://th.bing.com/th/id/R.7b5cabca475fa47636b7e5ea00a00354?rik=7gsHkiMMsXN%2fYw&riu=http%3a%2f%2ffilmvf.info%2fwp-content%2fuploads%2f2019%2f12%2fAvatar-2-Set-Photo-Live-Action-Wrap-2019.jpg&ehk=n1iiDc%2fHubRTiYgqN9oKgX1jYdzgzb%2bpBsBy0a%2fYOYA%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+.movie{
+    width: 300px;
+    height: 600px;
+    background: #1e1b26;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin: 0 20px 20px 20px;
+    box-shadow: 0 0 20px black;
+}
+.movie-image-1{
+    background: url(avatar.jpg);
+}
+.movie-image{
+    height: 55%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-blend-mode: screen;}
+.movie-image span{
+    position: absolute;
+    top:0;
+    right: 0; 
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.movie-info{
+    color: #bbb;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.title{
+    font-size: 2rem;
+}
+.genres{
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: -2px;
+}
+.movie-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.movie-text p:nth-child(1){
+    font-size: 0.8rem;
+}
+.likes{
+    color: #f44336;
+    font-size: 0.8rem;
+}
+.likes span{
+    margin-left: 10px;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin: 5px 0;
+}
+.text{
+    font-size: 0.7rem;
+    color: gray;
+    margin-bottom: 5px;
+}
+.cast{
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #bbb;
+}
+.actions{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    padding: 3px 8px;
+    background: transparent;
+    border: 1px solid #f44336;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover i{
+color: #eee;
+}
+button:hover{
+    color: #eee;
+    background-color: #f44336;
+}
+button .fa{
+    font-size: 0.8rem;
+}
+.fa{
+    color: #f44336;
+    margin-right: 5px;
+}
+.fa:hover{
+    color: #eee;
+}
+.action-more .fa{
+    margin: 10px;
+    font-size: 1.5rem;
+}
